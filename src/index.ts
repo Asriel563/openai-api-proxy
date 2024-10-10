@@ -37,10 +37,8 @@ export default {
     override_headers.set('Refer', url.origin)
 
     const upstreamPath = new URL(url.pathname, upstreamUrl.origin)
-    const response = await fetch(upstreamPath, {
-      method: request.method,
-      headers: override_headers,
-      body: request.body,
+    const response = new Response(null, {
+      status: 200,
     })
 
     return response
