@@ -4,3 +4,7 @@ compatibility_date = "2023-03-06"
 
 [vars]
 OPENAI_API_KEY=""
+
+[observability]
+enabled = true
+head_sampling_rate = 1 # optional. default = 1.
